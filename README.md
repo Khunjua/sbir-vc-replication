@@ -1,5 +1,7 @@
 # Replication Packet
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20452792.svg)](https://doi.org/10.5281/zenodo.20452792)
+
 This folder contains anonymised data and code sufficient to reproduce
 the main numerical results of the paper:
 
@@ -124,6 +126,12 @@ published bootstrap confidence intervals.
 Python 3.10+ (tested on 3.10 through 3.14).  Pinned in `requirements.txt`:
 `xgboost`, `scikit-survival`, `lifelines`, `scikit-learn`, `pandas`,
 `numpy`, `matplotlib`.
+
+## Citation
+
+If you use this packet, please cite the paper above. To cite the packet itself:
+
+> Khunjua, T., & Malik, J. (2026). *Replication packet: Regime-Dependent Predictability in the SBIR Phase II to Venture Capital Pipeline*. Zenodo. https://doi.org/10.5281/zenodo.20452792
 
 ## Contact
 
