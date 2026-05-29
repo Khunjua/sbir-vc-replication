@@ -1,0 +1,26 @@
+======================================================================
+ Paired bootstrap: S4 (within-recent) vs S2 (cross-cohort)
+ Common validation cohort: 2021-22 firms
+======================================================================
+Sample: 8332 firms; feature block 13+10+20+35 = 78.
+S2 train: 5391;  S4 train: 2012;  common 2021-22 val cohort: 1449
+
+Fitting S2 model (train 2010-18)...
+Fitting S4 model (train 2018-20)...
+
+Point estimates on common 2021-22 cohort:
+  C(S2 model)   = 0.5305
+  C(S4 model)   = 0.6143
+  Delta         = +0.0838
+
+Bootstrap (B = 500 valid resamples, seed 42):
+  C(S2) bootstrap mean = 0.5299, 95% CI [0.4875, 0.5721]
+  C(S4) bootstrap mean = 0.6136, 95% CI [0.5747, 0.6502]
+
+  Delta = C(S4) - C(S2) on common 2021-22 cohort:
+    mean   = +0.0837
+    95% CI = [+0.0378, +0.1326]
+    P(Delta > 0) = 1.000
+    P(Delta > 0.02) = 0.998
+
+Paper Section 5.1 claim: Delta = +0.079, 95% CI [+0.037, +0.127], P > 0 = 100%.

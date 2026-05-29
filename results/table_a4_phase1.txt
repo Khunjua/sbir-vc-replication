@@ -1,0 +1,15 @@
+==============================================================================
+ Replicating Table A.4 (Phase I anchored sample)
+==============================================================================
+Loaded 14156 firms; 14156 with embeddings.
+Feature block: 13 Tier 1 + 10 state dummies + 20 PCA = 43 features.
+
+Scenario                                  n_val   C (rep)           CI95 (rep)   Lift   Paper C
+S2: cross-break 2010-18 -> 2019-22         5250    0.5314        [0.508,0.555]   1.16     0.533
+S3: within-old   2012-15 -> 2016-18        2942    0.5952        [0.565,0.622]   1.65     0.597
+S4: within-recent 2018-20 -> 2021-22       2365    0.5725        [0.534,0.610]   1.42     0.577
+
+Reconciliation: the Phase I canonical model (Appendix A.4) is the no-sector
+specification -- Tier-1 + state + PCA-20, regularised XGBoost-Cox on
+standardised features, no troll filter.  Reproduces the paper to within
+~0.005 C-index; residual is XGBoost subsample stochasticity across machines.

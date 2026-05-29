@@ -1,0 +1,10 @@
+{
+  "title": "Replication packet: Regime-Dependent Predictability in the SBIR Phase II to Venture Capital Pipeline",
+  "upload_type": "dataset",
+  "creators": [
+    {"name": "Khunjua, Tamaz", "affiliation": "School of Science and Technology, University of Georgia, Tbilisi, Georgia"},
+    {"name": "Malik, Julia", "affiliation": "Zeoba Limited, London, United Kingdom"}
+  ],
+  "license": "cc-by-4.0",
+  "description": "Anonymised firm-level data and code to reproduce the main numerical results (Table 1, Table A.4, Section 5.1 paired bootstrap, Figure 1) of the paper on regime-dependent SBIR Phase II to venture-capital follow-on predictability. Code is MIT-licensed; data are CC-BY-4.0. Derived from public U.S. SBIR/STTR awards and SEC Form D filings."
+}

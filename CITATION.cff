@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this replication packet, please cite the associated paper."
+title: "Replication packet: Regime-Dependent Predictability in the SBIR Phase II to Venture Capital Pipeline"
+type: dataset
+authors:
+  - family-names: Khunjua
+    given-names: Tamaz
+    affiliation: "School of Science and Technology, University of Georgia, Tbilisi, Georgia"
+  - family-names: Malik
+    given-names: Julia
+    affiliation: "Zeoba Limited, London, United Kingdom"
+license: MIT

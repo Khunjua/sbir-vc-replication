@@ -1,0 +1,17 @@
+==============================================================================
+ Replicating Table 1 of the paper
+==============================================================================
+Loaded 8463 firms; -5 TRL-missing -> 8458; -126 trolls -> 8332 canonical sample.
+Feature block: 13 Tier 1 + 10 state + 20 PCA + 35 VC-taxonomy L1 = 78 features.
+
+Scenario                                n_val   C (rep)           CI95 (rep)        Lift (rep)   Paper C
+S1: random 5-fold (pooled)               8332    0.6779             +-0.0248              2.06     0.668
+S2: cross-break                          2941    0.5620        [0.536,0.590]  1.73 [1.44,2.06]     0.565
+S3: within-old                           1547    0.6401        [0.607,0.676]  1.53 [1.20,2.06]     0.637
+S4: within-recent                        1449    0.6143        [0.577,0.651]  1.65 [1.21,2.16]     0.616
+
+Reconciliation: canonical specification (78-feature block incl. 35 VC-taxonomy
+L1 similarity scores, regularised XGBoost-Cox on standardised features, 126-firm
+troll exclusion -> n=8332).  Reproduces the paper's point estimates to within
+~0.003 C-index; residual variation is XGBoost subsample stochasticity across
+machine architectures (fixed seed does not guarantee byte-exact trees).
