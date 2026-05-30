@@ -7,7 +7,7 @@ the main numerical results of the paper:
 
 > Khunjua, T. and Malik, J. (2026).  Regime-Dependent Predictability
 > in the SBIR Phase II to Venture Capital Pipeline: Evidence from
-> 8,332 U.S. Small Business Innovation Research Awardees, 2010-2022.
+> 8,332 U.S. Awardees, 2010-2022.
 
 The folder is self-contained: no external databases, no internal
 infrastructure, no network calls.  Replication is one command.
@@ -34,7 +34,7 @@ replication/
   code/
     02_table_1_scenarios.py     (Table 1: S1, S2, S3, S4 with bootstrap CI)
     03_paired_bootstrap.py      (Section 5.1 paired bootstrap: S4 vs S2)
-    04_phase1_table.py          (Table A.4: Phase I anchored replication)
+    04_phase1_table.py          (Table A.1: Phase I anchored replication)
     05_figure_scenarios.py      (Figure 1: validation-scenarios bar chart)
   data/
     phase2_anon.csv             (8463 Phase II firms; outcome, Tier-1
@@ -61,12 +61,12 @@ replication/
   `min_child_weight=8`, `reg_alpha=0.001`, `reg_lambda=1.0`, fit on
   `StandardScaler`-ed features.  Concordance and top-10% lift with
   500-resample bootstrap CIs (seed 42).
-* **Phase I (Table A.4)** uses the no-sector block (Tier-1 + state +
+* **Phase I (Table A.1)** uses the no-sector block (Tier-1 + state +
   PCA-20, same regularised model, no troll filter, n=14156).
 
 ## What this packet covers / does not cover
 
-Covered: Table 1 (S1-S4), Section 5.1 paired bootstrap, Table A.4
+Covered: Table 1 (S1-S4), Section 5.1 paired bootstrap, Table A.1
 (Phase I), Figure 1.
 
 Not covered (require data or models not redistributed): the seven-model
@@ -112,7 +112,7 @@ Section 5.1 paired bootstrap (S4 vs S2, common 2021-22 cohort):
 paper Delta = +0.079, 95% CI [+0.037, +0.127], P>0 = 100%;
 replicated Delta = +0.084, 95% CI [+0.038, +0.133], P>0 = 100%.
 
-Phase I (Table A.4): S2 0.531 / S3 0.595 / S4 0.573 vs paper
+Phase I (Table A.1): S2 0.531 / S3 0.595 / S4 0.573 vs paper
 0.533 / 0.597 / 0.577 -- within ~0.005.
 
 The packet reproduces the paper's point estimates to within ~0.003
